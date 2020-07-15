@@ -5,7 +5,7 @@
     "es2020": true,
     "node": true,
     "commonjs": true,
-    "jest": true
+    "jest/globals": true
   },
   "extends": [
     "plugin:jest/recommended",
@@ -52,7 +52,7 @@
       "version": "detect"
     },
     "jest": {
-      "version": "detect"
+      "version": 26
     }
   },
   "globals": {
