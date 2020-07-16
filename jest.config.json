@@ -3,7 +3,7 @@
 
   "bail": 1,
 
-  "cacheDirectory": "<rootDir>/cache",
+  "cacheDirectory": "<rootDir>/.cache",
   "clearMocks": true,
   "collectCoverage": true,
   "collectCoverageFrom": [
