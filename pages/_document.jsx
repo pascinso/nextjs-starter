@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-class App extends Document {
+class MyDocument extends Document {
   render() {
     return (
       <Html>
@@ -14,9 +14,9 @@ class App extends Document {
   }
 }
 
-App.getInitialProps = async (ctx) => {
+MyDocument.getInitialProps = async (ctx) => {
   const initialProps = await Document.getInitialProps(ctx);
   return { ...initialProps };
 };
 
-export default App;
+export default MyDocument;

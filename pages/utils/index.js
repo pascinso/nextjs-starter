@@ -1,12 +1,18 @@
-export * from "../index.page";
-export * from "../_app.page";
+
+
+export * from "..";
+export * from "../_app";
 
 function get({ prop }) {
+
   return prop;
 }
 
 export const useStore = () => {
+
+
+
   return {
-    get: get({}),
+    get: get({})
   };
 };
