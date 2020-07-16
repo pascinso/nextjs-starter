@@ -8,6 +8,8 @@ export const useApp = ({ Component, pageProps }) => {
 
   return (
     <main id="app">
+
+      Home
       <Component {...pageProps} />
     </main>
   );
