@@ -5,7 +5,9 @@
     },
     "development": {
       "presets": ["next/babel"]
+    },
+    "production": {
+      "presets": ["next/babel"]
     }
-  },
-  "plugins": ["@babel/plugin-transform-react-jsx"]
+  }
 }

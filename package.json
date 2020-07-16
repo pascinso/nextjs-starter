@@ -1,6 +1,6 @@
 {
   "name": "nextjs-starter",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "author": {
     "name": "yourname",
     "email": "your@email.com"
@@ -26,8 +26,6 @@
     "sass": "^1.26.9"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@types/jest": "^26.0.4",
