@@ -15,7 +15,7 @@
 # /package-lock.json
 
 # jest testing
-/cache
+/.cache
 /coverage
 
 # next.js
@@ -27,6 +27,11 @@
 
 # misc
 .DS_Store
+
+
+# npm
+.npmrc
+# .npmignore
 
 # debug
 npm*
