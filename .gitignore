@@ -28,6 +28,11 @@
 # misc
 .DS_Store
 
+
+# npm
+.npmrc
+# .npmignore
+
 # debug
 npm*
 yarn*
