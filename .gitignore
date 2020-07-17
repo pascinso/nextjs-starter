@@ -29,8 +29,8 @@
 .DS_Store
 
 # npm
-.npmrc
-# .npmignore
+/.npmrc
+/.npmignore
 
 # debug
 npm*
