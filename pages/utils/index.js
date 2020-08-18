@@ -1,5 +1,4 @@
-export * from "../index.page";
-export * from "../_app.page";
+import styles from "./style.module.scss";
 
 function get({ prop }) {
   return prop;
@@ -8,5 +7,6 @@ function get({ prop }) {
 export const useStore = () => {
   return {
     get: get({}),
+    styles,
   };
 };

@@ -1,5 +1,9 @@
+import { useStore } from "./utils";
+
 export const useHome = () => {
-  return <main id="home" />;
+  const { styles } = useStore();
+
+  return <main className={styles.home} />;
 };
 
 export default useHome;
