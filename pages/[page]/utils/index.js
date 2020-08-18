@@ -1,6 +1,5 @@
-
-export * from '../index.page'
+import styles from "./style.module.scss";
 
 export const usePageStore = () => {
-  return {}
-}
+  return { styles };
+};
