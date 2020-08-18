@@ -1,11 +1,9 @@
-
+import { usePageStore } from "./utils";
 
 export const usePage = () => {
-  return (
-    <main id='page'>
-      Page
-    </main>
-  )
-}
+  const { styles } = usePageStore();
 
-export default usePage
+  return <main className={styles.page}>Page</main>;
+};
+
+export default usePage;
