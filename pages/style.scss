@@ -1,7 +1,10 @@
-@import "./utils/style";
+@import "styles/default";
+@import "styles/variables";
+@import "styles/mixins";
 
 #app {
-  #home-page {
-    display: flex;
-  }
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

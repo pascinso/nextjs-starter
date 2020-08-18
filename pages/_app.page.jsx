@@ -1,6 +1,5 @@
 import "./style.scss";
 import { func, string, shape } from "prop-types";
-
 import { useStore } from "./utils";
 
 export const useApp = ({ Component, pageProps }) => {
@@ -8,7 +7,7 @@ export const useApp = ({ Component, pageProps }) => {
 
   return (
     <main id="app">
-      Home
+      App
       <Component {...pageProps} />
     </main>
   );
