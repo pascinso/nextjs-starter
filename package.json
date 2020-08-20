@@ -1,6 +1,6 @@
 {
   "name": "nextjs-starter",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "author": {
     "name": "your_name",
     "email": "your@email.com"
@@ -12,6 +12,7 @@
   "repository": "your_git_url",
   "license": "MIT",
   "scripts": {
+    "upgrade": "sudo npm update npm -g",
     "set": "npm install",
     "update": "npm update",
     "dev": "next dev -p 8900",
