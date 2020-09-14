@@ -12,6 +12,7 @@
   "repository": "your_git_url",
   "license": "MIT",
   "scripts": {
+    "audit": "npm audit fix",
     "build": "next build",
     "dev": "next dev -p 8900",
     "lint": "eslint --ext .js,.jsx pages/",
