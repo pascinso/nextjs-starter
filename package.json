@@ -1,6 +1,6 @@
 {
   "name": "nextjs-starter",
-  "version": "2.0.9",
+  "version": "2.1.0",
   "author": {
     "name": "your_name",
     "email": "your@email.com"
@@ -12,6 +12,7 @@
   "repository": "your_git_url",
   "license": "MIT",
   "scripts": {
+    "audit": "npm audit fix",
     "build": "next build",
     "dev": "next dev -p 8900",
     "lint": "eslint --ext .js,.jsx pages/",
