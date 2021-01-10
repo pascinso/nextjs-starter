@@ -4,9 +4,7 @@ function get({ prop }) {
   return prop;
 }
 
-export const useStore = () => {
-  return {
-    get: get({}),
-    styles,
-  };
-};
+export const useStore = () => ({
+  get: get({}),
+  styles,
+});

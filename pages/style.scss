@@ -1,8 +1,7 @@
 @import "styles/default";
-@import "styles/variables";
-@import "styles/mixins";
 
 #app {
+  position: relative;
   color: $primary-color;
   display: flex;
   flex-direction: column;
