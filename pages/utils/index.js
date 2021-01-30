@@ -1,12 +1,9 @@
 import styles from "./style.module.scss";
 
-function get({ prop }) {
-  return prop;
-}
+const { home } = styles;
 
-export const useStore = () => {
+export function useStore() {
   return {
-    get: get({}),
-    styles,
+    home,
   };
-};
+}
