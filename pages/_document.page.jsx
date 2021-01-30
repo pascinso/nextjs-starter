@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-class App extends Document {
+export class App extends Document {
   render() {
     return (
       <Html>

@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import { useApp } from "../_app.page";
+import { useApp } from "../../_app.page";
 
 const props = { Component: jest.fn(), pageProps: {} };
 
@@ -8,7 +8,9 @@ describe("app", () => {
   let app;
   const { Component, pageProps } = props;
 
-  const App = () => useApp({ Component, pageProps });
+  function App() {
+    return useApp({ Component, pageProps });
+  }
 
   beforeEach(() => {
     wrapper = shallow(<App />);

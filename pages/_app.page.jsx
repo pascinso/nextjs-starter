@@ -1,14 +1,11 @@
 import "./style.scss";
-import { useStore } from "./utils";
 
-export const useApp = ({ Component, pageProps }) => {
-  useStore();
-
+export function useApp({ Component, pageProps }) {
   return (
     <main id="app">
       <Component {...pageProps} />
     </main>
   );
-};
+}
 
 export default useApp;
