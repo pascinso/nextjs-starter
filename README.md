@@ -16,7 +16,7 @@ You can start editing the page by modifying `pages/index.page.jsx`. The page aut
 
 ## Testing
 
-With [Jest](https://jestjs.io) and [Enzyme](https://enzymejs.github.io/enzyme) already setup, you can create a `.test.jsx` and start testing using:
+With [Jest](https://jestjs.io) and [Enzyme](https://enzymejs.github.io/enzyme) already setup, you can create a `.test.jsx` file and start testing using:
 
 ```bash
 npm test
