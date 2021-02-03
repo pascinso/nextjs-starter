@@ -1,7 +1,7 @@
-import { usePageStore } from "./utils";
+import { useStore } from "./utils";
 
 export function usePage() {
-  const { page } = usePageStore();
+  const { page } = useStore();
 
   return <main className={page}>Page</main>;
 }
