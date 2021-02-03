@@ -14,6 +14,16 @@ Open [http://localhost:8900](http://localhost:8900) with your browser to see the
 
 You can start editing the page by modifying `pages/index.page.jsx`. The page auto-updates as you edit the file.
 
+## Testing
+
+With [Jest](https://jestjs.io) and [Enzyme](https://enzymejs.github.io/enzyme) already setup, you can create a `.test.jsx` and start testing using:
+
+```bash
+npm test
+# or
+yarn test
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
