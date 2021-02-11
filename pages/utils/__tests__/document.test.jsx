@@ -1,7 +1,7 @@
 import { shallow } from "enzyme";
 import { App } from "../../_document.page";
 
-describe("_document.page.jsx", () => {
+describe("document", () => {
   it("renders", () => {
     const wrapper = shallow(<App />);
     expect(wrapper).toHaveLength(1);
