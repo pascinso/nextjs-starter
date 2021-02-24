@@ -7,7 +7,6 @@ describe("utils", () => {
   const Store = useStore;
 
   afterEach(() => shallow(<Store />));
-
   test("calls useStore", () => {
     wrapper = shallow(<Store />);
     expect(wrapper.isEmptyRender).toBeTruthy();
