@@ -7,6 +7,6 @@ describe("useHome", () => {
       return useHome();
     }
     const wrapper = shallow(<Home />);
-    expect(wrapper).toHaveLength(1);
+    expect(wrapper.isEmptyRender()).toBeFalsy();
   });
 });

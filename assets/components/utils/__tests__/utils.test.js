@@ -25,7 +25,7 @@ describe("utils", () => {
     // useEffect = jest.spyOn(React, "useEffect");
     // unmount = jest.spyOn(React, "useEffect");
 
-    // mockUnmount()
+    // mockUnmount();
     // mockEffect();
 
     wrapper = shallow(<Store />);

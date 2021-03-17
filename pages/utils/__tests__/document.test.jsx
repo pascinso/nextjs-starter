@@ -4,7 +4,7 @@ import { App } from "../../_document.page";
 describe("document", () => {
   it("renders", () => {
     const wrapper = shallow(<App />);
-    expect(wrapper).toHaveLength(1);
+    expect(wrapper.isEmptyRender()).toBeFalsy();
   });
 
   describe("getInitialProps", () => {
