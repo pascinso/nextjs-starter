@@ -7,5 +7,4 @@ export function useApp({ Component, pageProps }) {
     </main>
   );
 }
-
 export default useApp;
