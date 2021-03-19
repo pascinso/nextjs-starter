@@ -7,14 +7,12 @@ describe("useApi", () => {
   };
 
   describe("response", () => {
-    beforeEach(() => {
-      useApi({ response });
-    });
+    beforeEach(() => useApi(null, response ));
 
     test("calls json", () => {
       expect(response.json).toHaveBeenCalledTimes(1);
     });
-    test("set statusCode", () => {
+    test("sets statusCode", () => {
       expect(typeof response.statusCode).toEqual("number");
     });
   });
