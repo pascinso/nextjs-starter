@@ -1,4 +1,4 @@
-import { useApi } from "../hello";
+import { useApi } from "../hello.page";
 
 describe("useApi", () => {
   const response = {
@@ -7,7 +7,7 @@ describe("useApi", () => {
   };
 
   describe("response", () => {
-    beforeEach(() => useApi(null, response ));
+    beforeEach(() => useApi(null, response));
 
     test("calls json", () => {
       expect(response.json).toHaveBeenCalledTimes(1);
