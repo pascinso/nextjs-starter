@@ -1,6 +1,6 @@
 module.exports = {
   distDir: "build",
-  pageExtensions: ["page.jsx"],
+  pageExtensions: ["page.jsx", "page.js"],
   target: "serverless",
   reactStrictMode: true,
 };
