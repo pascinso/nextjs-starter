@@ -2,7 +2,7 @@ import { shallow } from "enzyme";
 import { useHome } from "../../index.page";
 
 describe("useHome", () => {
-  it("render", () => {
+  it("renders", () => {
     const Home = useHome;
 
     const wrapper = shallow(<Home />);
