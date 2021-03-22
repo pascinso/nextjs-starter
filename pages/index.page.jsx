@@ -5,5 +5,4 @@ export function useHome() {
 
   return <main className={home}>Home</main>;
 }
-
 export default useHome;
