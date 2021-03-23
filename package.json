@@ -1,6 +1,6 @@
 {
   "name": "nextjs-starter",
-  "version": "5.7.0",
+  "version": "5.8.0",
   "author": {
     "name": "your_name",
     "email": "your@email.com"
@@ -12,18 +12,23 @@
   "repository": "your_git_url",
   "license": "MIT",
   "scripts": {
+    "add-android": "npx cap add android",
+    "add-electron": "npx cap add electron",
+    "add-ios": "npx cap add ios",
     "audit": "npm audit fix",
     "build": "next build && next export",
     "clear-react-import": "npx react-codemod update-react-imports",
-    "dev": "next dev -p 8900",
+    "copy-capacitor": "npx cap copy",
+    "dev": "next dev -p 8532",
+    "init-capacitor": "npx cap init",
     "lint": "eslint --ext .js,.jsx pages/",
+    "open-android": "npx cap open android",
+    "open-electron": "npx cap open electron",
+    "open-ios": "npx cap open ios ",
     "outdated": "npx npm-check-updates -u",
     "set": "npm i",
     "start": "next start",
     "test": "jest",
-    "telemetry-disable": "npx next telemetry disable",
-    "telemetry-enable": "npx next telemetry enable",
-    "telemetry-status": "npx next telemetry status",
     "update": "npm update",
     "upgrade": "sudo npm update npm -g"
   },
