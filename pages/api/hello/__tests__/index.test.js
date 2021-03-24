@@ -7,7 +7,11 @@ describe("useApi", () => {
   };
 
   describe("response", () => {
+    // const json = jest.fn(() => Promise.resolve()); // Promise.resolve() not needed
+    // global.fetch = jest.fn();
+
     test("calls json", async () => {
+      // jest.spyOn(global, "fetch").mockResolvedValueOnce({ json });
       await useApi(null, response);
 
       expect(response.json).toHaveBeenCalledTimes(1);
