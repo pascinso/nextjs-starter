@@ -1,6 +1,6 @@
 {
   "name": "nextjs-starter",
-  "version": "5.10.0",
+  "version": "5.11.0",
   "author": {
     "name": "your_name",
     "email": "your@email.com"
@@ -16,9 +16,8 @@
     "add-electron": "npx cap add electron",
     "add-ios": "npx cap add ios",
     "audit": "npm audit fix",
-    "build": "next build && next export",
+    "build": "next build && next export && npx cap copy",
     "clear-react-import": "npx react-codemod update-react-imports",
-    "copy-capacitor": "npx cap copy",
     "dev": "next dev -p 8532",
     "init-capacitor": "npx cap init",
     "lint": "eslint --ext .js,.jsx pages/",
