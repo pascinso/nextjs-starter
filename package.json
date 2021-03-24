@@ -16,7 +16,7 @@
     "add-electron": "npx cap add electron",
     "add-ios": "npx cap add ios",
     "audit": "npm audit fix",
-    "build": "next build && next export && npx cap copy",
+    "build": "next build && next export && npx cap copy --if-present",
     "clear-react-import": "npx react-codemod update-react-imports",
     "dev": "next dev -p 8532",
     "init-capacitor": "npx cap init",
