@@ -1,7 +1,1 @@
-import { home } from "./style.module.scss";
-
-export function useStore() {
-  return {
-    home,
-  };
-}
+export { homeStyles } from "./style.module.scss";
