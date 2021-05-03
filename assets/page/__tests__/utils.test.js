@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import { useStore } from "..";
+import { useStore } from "../utils";
 
 describe("utils", () => {
   // let useEffect;
