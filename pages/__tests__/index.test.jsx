@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import { useHome } from "../../index.page";
+import { useHome } from "../index.page";
 
 describe("useHome", () => {
   it("renders", () => {
