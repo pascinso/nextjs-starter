@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import { useApp } from "../../_app.page";
+import { useApp } from "../_app.page";
 
 describe("app", () => {
   const Component = jest.fn();

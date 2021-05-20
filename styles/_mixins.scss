@@ -1,7 +1,0 @@
-@import "styles/variables";
-
-@mixin set-layout($width) {
-  @media (max-width: $width) {
-    @content;
-  }
-}
