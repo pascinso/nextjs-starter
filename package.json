@@ -38,7 +38,7 @@
   },
   "proxy": "http://localhost:8900",
   "dependencies": {
-    "next": "10.2.2",
+    "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "^1.33.0"
