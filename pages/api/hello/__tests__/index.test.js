@@ -15,7 +15,7 @@ describe("useApi", () => {
       await useApi(null, response);
 
       expect(response.json).toHaveBeenCalledTimes(1);
-      expect(typeof response.statusCode).toEqual("number");
+      expect(typeof response.statusCode).toBe("number");
     });
   });
 });
