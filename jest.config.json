@@ -58,7 +58,7 @@
     "/coverage/"
   ],
   "transform": {
-    "^.+\\.jsx?$": "babel-jest"
+    "^.+\\.(t|j)sx?$": ["@swc/jest"]
   },
 
   "unmockedModulePathPatterns": [
