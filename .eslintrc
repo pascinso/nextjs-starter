@@ -18,9 +18,7 @@
     "prettier"
   ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
+    "ecmaFeatures": { "jsx": true },
     "ecmaVersion": 11,
     "sourceType": "module"
   },
@@ -39,23 +37,12 @@
     "prettier/prettier": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/jsx-no-undef": "error",
-    "react/jsx-props-no-spreading": [
-      "error",
-      {
-        "exceptions": ["Component"]
-      }
-    ],
+    "react/jsx-props-no-spreading": ["error", { "exceptions": ["Component"] }],
     "react/react-in-jsx-scope": "off"
   },
   "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "jest": {
-      "version": "detect"
-    }
+    "react": { "version": "detect" },
+    "jest": { "version": "detect" }
   },
-  "globals": {
-    "React": "writable"
-  }
+  "globals": { "React": "writable" }
 }

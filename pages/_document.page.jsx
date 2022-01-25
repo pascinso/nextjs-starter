@@ -13,7 +13,7 @@ export class App extends Document {
     );
   }
 }
-App.getInitialProps = async (ctx) => {
+App.getInitialProps = async function getInitialProps(ctx) {
   const initialProps = await Document.getInitialProps(ctx);
   return { ...initialProps };
 };
