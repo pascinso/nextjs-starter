@@ -2,19 +2,12 @@ import { shallow } from "enzyme";
 import { App } from "../_document.page";
 
 describe("document", () => {
-  it("renders", () => {
-    const html = shallow(<App />).find("Html");
-
-    // expect(wrapper.isEmptyRender()).toBeFalsy();
-    expect(html.find("Head")).toBeTruthy();
-    expect(html.find("body").find("Main")).toBeTruthy();
-  });
+  it("renders", () => expect(shallow(<App />).isEmptyRender()).toBeFalsy());
 
   describe("getInitialProps", () => {
-    test("return an object", async () => {
-      const ctx = { defaultGetInitialProps: jest.fn() };
-      const result = await App.getInitialProps(ctx);
-      expect(result).toEqual({});
-    });
+    test("return an object", async () =>
+      expect(
+        await App.getInitialProps({ defaultGetInitialProps: jest.fn() })
+      ).toEqual({}));
   });
 });
