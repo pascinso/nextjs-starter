@@ -1,7 +1,8 @@
 module.exports = {
   distDir: "build",
-  pageExtensions: ["page.jsx", "page.js"],
+  eslint: { ignoreDuringBuilds: true },
   outputStandalone: true,
+  pageExtensions: ["page.jsx", "page.js"],
   reactStrictMode: true,
   webpack(config) {
     config.resolve.modules.push(__dirname);
