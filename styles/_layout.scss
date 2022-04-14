@@ -1,5 +1,0 @@
-@mixin useLayout($width) {
-  @media (max-width: $width) {
-    @content;
-  }
-}

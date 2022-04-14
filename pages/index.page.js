@@ -1,6 +1,5 @@
 import { homeStyles } from "./utils";
 
-export function useHome() {
+export default function useHome() {
   return <main className={homeStyles}>Home</main>;
 }
-export default useHome;
