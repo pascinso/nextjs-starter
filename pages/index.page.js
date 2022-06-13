@@ -1,5 +1,11 @@
-import { homeStyles } from "./utils";
+import dynamic from "next/dynamic";
+import className from "./style.module.scss";
 
 export default function useHome() {
-  return <main className={homeStyles}>Home</main>;
+  const Vercel = dynamic(() => import("../public/vercel.svg"));
+  return (
+    <main className={className.home}>
+      <Vercel height={300} />
+    </main>
+  );
 }
