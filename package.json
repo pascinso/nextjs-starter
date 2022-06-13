@@ -1,16 +1,17 @@
 {
   "name": "nextjs-starter",
-  "version": "7.1.0",
+  "version": "8.0.0",
   "author": {
-    "name": "your_name",
-    "email": "your@email.com"
+    "name": "Ebuka Isiadinso",
+    "email": "pascinso@proton.me"
   },
   "private": true,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "your_git_url",
+  "repository": "https://github.com/pascinso/nextjs-starter.git",
   "license": "MIT",
+  "proxy": "http://localhost:8900",
   "scripts": {
     "cap add android": "npx cap add android",
     "cap add electron": "npx cap add electron",
@@ -36,30 +37,28 @@
     "npm upgrade": "sudo npm update npm -g",
     "test": "jest"
   },
-  "proxy": "http://localhost:8900",
   "dependencies": {
-    "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "sass": "^1.50.0"
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "sass": "^1.52.3"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "eslint": "^8.13.0",
+    "@svgr/webpack": "^6.2.1",
+    "@types/jest": "^28.1.1",
+    "eslint": "8.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "jest": "^27.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.1",
     "node-notifier": "^10.0.1",
     "prettier": "^2.6.2",
-    "typescript": "^4.6.3"
+    "typescript": "^4.7.3"
   }
 }

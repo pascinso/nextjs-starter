@@ -1,10 +1,5 @@
-$lm: 1024px;
-$mm: 991px;
-$sm: 767px;
-$xsm: 370px;
-
-@mixin useLayout($width, $limit: max) {
-  @media (#{$limit}-width: $width) {
+@mixin useLayout($size, $limit: max, $position: width) {
+  @media (#{$limit}-#{$position}: $size) {
     @content;
   }
 }

@@ -14,6 +14,5 @@ export default class App extends Document {
   }
 }
 App.getInitialProps = async function getInitialProps(ctx) {
-  const initialProps = await Document.getInitialProps(ctx);
-  return { ...initialProps };
+  return { ...(await Document.getInitialProps(ctx)) };
 };
