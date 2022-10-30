@@ -1,7 +1,7 @@
 module.exports = {
   distDir: "build",
   eslint: { ignoreDuringBuilds: true },
-  outputStandalone: true,
+  output: "standalone",
   pageExtensions: ["page.jsx", "page.js"],
   reactStrictMode: true,
   swcMinify: true,
