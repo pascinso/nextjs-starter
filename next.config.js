@@ -1,8 +1,8 @@
 module.exports = {
   distDir: "build",
-  eslint: { ignoreDuringBuilds: true },
+  eslint: { ignoreDuringBuilds: false },
   output: "standalone",
-  pageExtensions: ["page.jsx", "page.js"],
+  pageExtensions: ["page.tsx", "page.ts"],
   reactStrictMode: true,
   swcMinify: true,
   webpack(config) {

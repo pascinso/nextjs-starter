@@ -1,5 +1,4 @@
 {
-  "root": true,
   "env": {
     "browser": true,
     "es2020": true,
@@ -7,24 +6,41 @@
     "commonjs": true
   },
   "extends": [
-    "plugin:jest/recommended",
-    "plugin:jest/style",
-    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
     "plugin:jsx-a11y/recommended",
+    "plugin:node/recommended",
+    "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "airbnb",
+    "plugin:prettier/recommended",
     "prettier"
   ],
+  "globals": { "React": "writable", "JSX": true },
+  "ignorePatterns": ["build", "node_modules"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
-    "ecmaVersion": 11,
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "jest"],
+  "plugins": ["react", "prettier", "jest", "@typescript-eslint"],
+  "root": true,
   "rules": {
-    "import/no-unresolved": [2, { "ignore": ["tools"] }],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-var-requires": "off",
+    "import/extensions": [
+      "error",
+      { "ts": "ignorePackages", "json": "ignorePackages" }
+    ],
+    "import/no-cycle": "off",
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
@@ -32,14 +48,21 @@
     "jest/valid-expect": "error",
     "no-return-assign": [2, "except-parens"],
     "no-unused-vars": "warn",
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "version": ">=8.0.0",
+        "ignores": ["dynamicImport", "modules", "restSpreadProperties"]
+      }
+    ],
+    "node/no-missing-import": "off",
     "prettier/prettier": "warn",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "react/jsx-no-undef": "error",
     "react/jsx-props-no-spreading": ["error", { "exceptions": ["Component"] }]
   },
   "settings": {
     "react": { "version": "detect" },
     "jest": { "version": "detect" }
-  },
-  "globals": { "React": "writable" }
+  }
 }

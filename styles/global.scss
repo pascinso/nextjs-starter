@@ -2,6 +2,7 @@ html {
   @mixin useStyle {
     padding: 0;
     margin: 0;
+    background: cadetblue;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
@@ -14,19 +15,19 @@ html {
   body {
     @include useStyle;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+    }
+
     #app {
       * {
         display: flex;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      button {
-        border: none;
-        cursor: pointer;
       }
     }
   }

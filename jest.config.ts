@@ -1,9 +1,9 @@
-const customJestConfig = {
+module.exports = require("next/jest")({ dir: "." })({
   // automock: false,
 
   // bail: 1,
 
-  cacheDirectory: "<rootDir>/.cache",
+  cacheDirectory: "<rootDir>/tests/.cache",
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: [
@@ -14,7 +14,7 @@ const customJestConfig = {
     "!**/.next/**",
     "!**/jest_dx/**",
   ],
-  coverageDirectory: "coverage",
+  coverageDirectory: "<rootDir>/tests/coverage",
   coverageReporters: ["json", "text", "lcov", "clover"],
   coverageThreshold: {
     global: {
@@ -27,7 +27,7 @@ const customJestConfig = {
 
   errorOnDeprecated: true,
 
-  moduleDirectories: ["node_modules", "."],
+  moduleDirectories: ["node_modules", "__dirname"],
   // moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node"],
   // moduleNameMapper: {
   //   "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
@@ -40,24 +40,23 @@ const customJestConfig = {
 
   resetMocks: true,
   restoreMocks: true,
-  roots: ["<rootDir>/pages/", "<rootDir>/tools"],
+  roots: ["<rootDir>/app/"],
   // runner: "jest-runner",
 
-  setupFilesAfterEnv: ["<rootDir>/tests/setup.js"],
+  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 
   // testTimeout: 100,
-  testEnvironment: "node",
+  testEnvironment: "jest-environment-jsdom",
   testLocationInResults: true,
   testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
   testPathIgnorePatterns: [
     "/.next/",
+    "/build/",
     "/node_modules/",
-    "/tests/",
+    "<rootDir>/tests/",
     "/coverage/",
   ],
-  // transform: {
-  //   "^.+\\.jsx?$": "babel-jest",
-  // },
+  // transform: { "^.+\\.tsx?$": "ts-jest" },
 
   // unmockedModulePathPatterns: [
   //   "<rootDir>/node_modules/react",
@@ -68,6 +67,6 @@ const customJestConfig = {
 
   // watchPathIgnorePatterns: ["<rootDir>/node_modules/"],
   // watchman: true,
-};
+});
 
-module.exports = require("next/jest")({ dir: "." })(customJestConfig);
+export {};

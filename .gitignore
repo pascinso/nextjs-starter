@@ -18,8 +18,7 @@
 # /package-lock.json
 
 # jest testing
-/.cache
-/coverage
+/tests/*
 
 # next.js
 /.next/
@@ -30,6 +29,7 @@
 
 # misc
 .DS_Store
+*.pem
 
 # debug
 npm*
@@ -40,12 +40,16 @@ yarn-error.log*
 
 # local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env*.local
 
 # capacitor.js files
 ios
 android
 electron
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
