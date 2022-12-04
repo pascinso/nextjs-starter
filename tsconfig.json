@@ -25,7 +25,8 @@
     "plugins": [{ "name": "next" }],
     "removeComments": true,
     "resolveJsonModule": true,
-    "target": "es5"
+    "target": "es5",
+    "types": ["node"]
   },
   "include": [
     "next-env.d.ts",
