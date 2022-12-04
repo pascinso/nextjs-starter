@@ -1,6 +1,6 @@
 module.exports = {
   distDir: "build",
-  eslint: { ignoreDuringBuilds: true },
+  eslint: { ignoreDuringBuilds: false },
   output: "standalone",
   pageExtensions: ["page.tsx", "page.ts"],
   reactStrictMode: true,
