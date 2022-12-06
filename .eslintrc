@@ -24,7 +24,7 @@
     "prettier"
   ],
   "globals": { "React": "writable", "JSX": true },
-  "ignorePatterns": ["build", "node_modules"],
+  "ignorePatterns": ["build", ".next", "node_modules", "dist"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
