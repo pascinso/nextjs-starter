@@ -1,4 +1,6 @@
-module.exports = require("next/jest")({ dir: "." })({
+import nextJest from "next/jest";
+
+export default nextJest({ dir: "." })({
   // automock: false,
 
   // bail: 1,
@@ -7,27 +9,29 @@ module.exports = require("next/jest")({ dir: "." })({
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: [
-    "**/*.{js,jsx}",
+    "**/*.{ts,tsx}",
     "!**/node_modules/**",
     "!**/tests/**",
     "!**/coverage/**",
     "!**/.next/**",
     "!**/jest_dx/**",
+    "!**/_app.page.tsx/**",
+    "!**/_document.page.tsx/**",
   ],
   coverageDirectory: "<rootDir>/tests/coverage",
   coverageReporters: ["json", "text", "lcov", "clover"],
   coverageThreshold: {
     global: {
-      statements: 80,
-      branches: 15,
+      statements: 100,
+      branches: 100,
       functions: 100,
-      lines: 80,
+      lines: 100,
     },
   },
 
   errorOnDeprecated: true,
 
-  moduleDirectories: ["node_modules", "__dirname"],
+  moduleDirectories: ["node_modules", "<rootDir>"],
   // moduleFileExtensions: ["js", "json", "jsx", "ts", "tsx", "node"],
   // moduleNameMapper: {
   //   "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
@@ -40,10 +44,10 @@ module.exports = require("next/jest")({ dir: "." })({
 
   resetMocks: true,
   restoreMocks: true,
-  roots: ["<rootDir>/app/"],
+  roots: ["<rootDir>/pages", "<rootDir>/components"],
   // runner: "jest-runner",
 
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
+  // setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 
   // testTimeout: 100,
   testEnvironment: "jest-environment-jsdom",
@@ -68,5 +72,3 @@ module.exports = require("next/jest")({ dir: "." })({
   // watchPathIgnorePatterns: ["<rootDir>/node_modules/"],
   // watchman: true,
 });
-
-export {};
