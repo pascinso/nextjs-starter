@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app --typescript`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ You can start editing the page by modifying `pages/index.page.jsx`. The page aut
 
 ## Testing
 
-With [Jest](https://jestjs.io) and [Enzyme](https://enzymejs.github.io/enzyme) already setup, you can create a `.test.jsx` file and start testing using:
+With [Jest](https://jestjs.io) and [React Testing Library](https://testing-library.com) already setup, you can create a `.test.tsx` or `.test.ts` file and start testing using:
 
 ```bash
 npm test
