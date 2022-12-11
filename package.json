@@ -1,47 +1,8 @@
 {
-  "name": "nextjs-starter",
-  "version": "9.0.0",
   "author": {
+    "email": "ebukaa@proton.me",
     "name": "Ebuka Isiadinso",
-    "email": "ebukaa@proton.me"
-  },
-  "private": true,
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "repository": "https://github.com/pascinso/nextjs-starter.git",
-  "license": "MIT",
-  "proxy": "http://localhost:8900",
-  "scripts": {
-    "cap:add-android": "npx cap add android",
-    "cap:add-electron": "npx cap add electron",
-    "cap:add-ios": "npx cap add ios",
-    "cap:copy": "npx cap copy",
-    "cap:init": "npx cap init",
-    "cap:open-android": "npx cap open android",
-    "cap open-electron": "npx cap open electron",
-    "cap open-ios": "npx cap open ios ",
-    "clear:react-import": "npx react-codemod update-react-imports",
-    "clear:cache": "npm run remove:node-modules && npm run remove:package-lock && npm run npm:clear-cache",
-    "eslint": "eslint --ext .ts,.tsx pages",
-    "eslint:fix": "eslint --fix --ext .ts,.tsx pages",
-    "next:build": "next build",
-    "npm:clear-cache": "npm cache clean --force",
-    "next:dev": "next dev -p 8900",
-    "next:export": "next export",
-    "next:lint": "next lint",
-    "next:start": "next start",
-    "next:telemetry-disable": "npx next telemetry disable",
-    "next:telemetry-enable": "npx next telemetry enable",
-    "next:telemetry-status": "npx next telemetry status",
-    "npm audit": "npm audit fix",
-    "npm:check-updates": "npx npm-check-updates -u",
-    "npm:install": "npm i",
-    "npm:update": "npm update",
-    "npm:upgrade": "sudo npm update npm -g",
-    "remove:node-modules": "rm -rf node_modules",
-    "remove:package-lock": "rm -f package-lock.json",
-    "test": "jest"
+    "url": "https://deciphercodes.com"
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
@@ -76,5 +37,48 @@
     "prettier": "^2.8.1",
     "sass": "^1.56.2",
     "typescript": "^4.9.4"
-  }
+  },
+  "license": "MIT",
+  "name": "nextjs-starter",
+  "private": true,
+  "proxy": "http://localhost:8900",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/pascinso"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pascinso/nextjs-starter.git"
+  },
+  "scripts": {
+    "cap:add-android": "npx cap add android",
+    "cap:add-electron": "npx cap add electron",
+    "cap:add-ios": "npx cap add ios",
+    "cap:copy": "npx cap copy",
+    "cap:init": "npx cap init",
+    "cap:open-android": "npx cap open android",
+    "cap open-electron": "npx cap open electron",
+    "cap open-ios": "npx cap open ios ",
+    "clear:react-import": "npx react-codemod update-react-imports",
+    "clear:cache": "npm run remove:node-modules && npm run remove:package-lock && npm run npm:clear-cache",
+    "eslint": "eslint --ext .ts,.tsx pages",
+    "eslint:fix": "eslint --fix --ext .ts,.tsx pages",
+    "next:build": "next build",
+    "npm:clear-cache": "npm cache clean --force",
+    "next:dev": "next dev -p 8900",
+    "next:export": "next export",
+    "next:lint": "next lint",
+    "next:start": "next start",
+    "next:telemetry-disable": "npx next telemetry disable",
+    "next:telemetry-enable": "npx next telemetry enable",
+    "next:telemetry-status": "npx next telemetry status",
+    "npm audit": "npm audit fix",
+    "npm:check-updates": "npx npm-check-updates -u",
+    "npm:install": "npm i",
+    "npm:update": "npm update",
+    "npm:upgrade": "sudo npm update npm -g",
+    "remove:node-modules": "rm -rf node_modules",
+    "remove:package-lock": "rm -f package-lock.json",
+    "test": "jest"
+  },
+  "version": "9.0.1"
 }
