@@ -12,7 +12,7 @@ yarn dev
 
 Open [http://localhost:8900](http://localhost:8900) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.page.jsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `pages/index.page.tsx`. The page auto-updates as you edit the file.
 
 ## Testing
 
