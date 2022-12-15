@@ -19,11 +19,11 @@ export default function load<Props extends object>(
   );
 }
 
-export function defineProperties<ObjectType extends object>(
-  obj: ObjectType,
-  properties: Properties<ObjectType>
+export function defineProperties<Component extends object>(
+  component: Component,
+  properties: Properties<Component>
 ) {
-  Object.defineProperties(obj, properties);
+  Object.defineProperties(component, properties);
 }
 
 export function throwError<Component extends ComponentType>(
