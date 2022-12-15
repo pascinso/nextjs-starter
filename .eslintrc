@@ -1,9 +1,9 @@
 {
   "env": {
     "browser": true,
-    "es2020": true,
-    "node": true,
-    "commonjs": true
+    "commonjs": true,
+    "es6": true,
+    "node": true
   },
   "extends": [
     "airbnb",
@@ -18,9 +18,9 @@
     "plugin:jest/style",
     "plugin:jsx-a11y/recommended",
     "plugin:node/recommended",
+    "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:prettier/recommended",
     "prettier"
   ],
   "globals": { "React": "writable", "JSX": true },
@@ -31,9 +31,13 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "jest", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "jest", "prettier", "react"],
   "root": true,
   "rules": {
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      { "allowSingleExtends": true }
+    ],
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-var-requires": "off",
     "import/extensions": [
