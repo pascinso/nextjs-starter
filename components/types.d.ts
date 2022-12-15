@@ -18,6 +18,6 @@ export type Properties<ObjectType extends object> = {
 
 type ComponentType = object & { name: string };
 
-interface ImportedComponent<Props> {
+interface ImportedComponent<Props extends object> {
   default(props: Props | object): JSX.Element | null;
 }
