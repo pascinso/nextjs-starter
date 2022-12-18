@@ -6,12 +6,12 @@ export type Optional<Type, Key extends keyof Type> = Omit<Type, Key> &
 
 export type Action = "get" | "set" | "access";
 
-export type Properties<ObjectType extends object> = {
-  [property in keyof Optional<ObjectType, keyof ObjectType>]: {
-    value?: ObjectType[property];
+export type Properties<Component extends object> = {
+  [property in keyof Optional<Component, keyof Component>]: {
+    value?: Component[property];
     writable?: boolean;
-    get?: () => ObjectType[property];
-    set?: (param: ObjectType[property]) => void;
+    get?: () => Component[property];
+    set?: (param: Component[property]) => void;
     configurable?: boolean;
   };
 };
