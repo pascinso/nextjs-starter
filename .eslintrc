@@ -10,6 +10,7 @@
     "airbnb/hooks",
     "eslint:recommended",
     "next/core-web-vitals",
+    "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:import/errors",
@@ -40,6 +41,14 @@
     ],
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["export", "interface", "type"]
+      }
+    ],
     "import/extensions": [
       "error",
       { "ts": "ignorePackages", "json": "ignorePackages" }
