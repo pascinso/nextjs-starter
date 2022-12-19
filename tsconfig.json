@@ -30,6 +30,6 @@
     "strict": true,
     "target": "esnext"
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "next-env.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx"]
 }
