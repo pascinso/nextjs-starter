@@ -16,7 +16,7 @@ export default nextJest({ dir: "." })({
     "!**/build/**",
     "!**/dist/**",
     "!**/node_modules/**",
-    "!**/tests/**"
+    "!**/tests/**",
   ],
   coverageDirectory: "<rootDir>/tests/coverage",
   coverageReporters: ["json", "text", "lcov", "clover"],
