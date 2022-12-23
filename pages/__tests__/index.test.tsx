@@ -1,9 +1,11 @@
-import { render } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import Home from "pages/index.page";
+
+jest.mock("@pascinso/utils");
 
 describe("Home", () => {
   it("should render", () => {
-    const screen = render(<Home />);
+    render(<Home />);
     expect(screen.getAllByRole("main")).toBeTruthy();
   });
 });
