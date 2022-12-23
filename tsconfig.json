@@ -31,5 +31,5 @@
     "target": "esnext"
   },
   "exclude": ["node_modules", "next-env.d.ts"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "build/types/**/*.ts"]
 }
