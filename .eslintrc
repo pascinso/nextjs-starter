@@ -23,6 +23,7 @@
     "plugin:prettier/recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:testing-library/react",
     "prettier"
   ],
   "globals": { "React": "writable", "JSX": true },
@@ -33,7 +34,13 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "jest", "prettier", "react"],
+  "plugins": [
+    "@typescript-eslint",
+    "jest",
+    "prettier",
+    "react",
+    "testing-library"
+  ],
   "root": true,
   "rules": {
     "@typescript-eslint/no-empty-interface": [
