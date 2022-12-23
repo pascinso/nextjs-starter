@@ -61,6 +61,7 @@
     "cap:open:android": "npx cap open android",
     "cap:open:electron": "npx cap open electron",
     "cap:open:ios": "npx cap open ios ",
+    "clean:cache": "npm cache clean --force",
     "eslint": "eslint --ext .ts,.tsx pages",
     "eslint:fix": "eslint --fix --ext .ts,.tsx pages",
     "next:build": "next build",
@@ -72,13 +73,12 @@
     "next:telemetry:enable": "npx next telemetry enable",
     "next:telemetry:status": "npx next telemetry status",
     "npm:audit": "npm audit fix",
-    "npm:clean:cache": "npm cache clean --force",
     "npm:install": "npm i",
-    "npm:update:dependency": "npx npm-check-updates -u",
-    "postnpm:clean:cache": "npm run npm:install",
-    "postnpm:update:dependency": "npm run npm:install",
-    "prenpm:clean:cache": "rm -f package-lock.json && rm -rf node_modules",
-    "test": "jest"
+    "postclean:cache": "npm run npm:install",
+    "postupdate:dependency": "npm run npm:install",
+    "preclean:cache": "rm -f package-lock.json && rm -rf node_modules",
+    "test": "jest",
+    "update:dependency": "npx npm-check-updates -u"
   },
   "version": "1.0.0"
 }
