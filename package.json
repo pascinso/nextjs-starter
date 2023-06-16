@@ -80,5 +80,5 @@
     "test": "jest",
     "update:dependency": "npx npm-check-updates -u"
   },
-  "version": "9.0.0"
+  "version": "9.1.0"
 }
