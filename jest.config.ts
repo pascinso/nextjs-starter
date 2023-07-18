@@ -1,6 +1,6 @@
 import nextJest from "next/jest";
 
-export default nextJest({ dir: "." })({
+const customJestConfig = {
   // automock: false,
 
   // bail: 1,
@@ -11,8 +11,6 @@ export default nextJest({ dir: "." })({
   collectCoverageFrom: [
     "**/*.{ts,tsx}",
     "!**/.next/**",
-    "!**/_app.page.tsx/**",
-    "!**/_document.page.tsx/**",
     "!**/build/**",
     "!**/dist/**",
     "!**/node_modules/**",
@@ -44,7 +42,7 @@ export default nextJest({ dir: "." })({
 
   resetMocks: true,
   restoreMocks: true,
-  roots: ["<rootDir>/pages", "<rootDir>/components"],
+  roots: ["<rootDir>/app", "<rootDir>/components"],
   // runner: "jest-runner",
 
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
@@ -55,14 +53,14 @@ export default nextJest({ dir: "." })({
   testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
   testPathIgnorePatterns: [
     "<rootDir>/.next",
-    "<rootDir>/pages/_app.page.tsx",
-    "<rootDir>/pages/_document.page.tsx",
     "<rootDir>/build",
     "<rootDir>/dist",
     "<rootDir>/node_modules",
     "<rootDir>/tests",
   ],
-  // transform: { "^.+\\.tsx?$": "ts-jest" },
+  // transform: {
+  //   "^.+\\.jsx?$": "babel-jest",
+  // },
 
   // unmockedModulePathPatterns: [
   //   "<rootDir>/node_modules/react",
@@ -73,4 +71,6 @@ export default nextJest({ dir: "." })({
 
   // watchPathIgnorePatterns: ["<rootDir>/node_modules/"],
   // watchman: true,
-});
+};
+
+export default nextJest({ dir: "." })(customJestConfig);
