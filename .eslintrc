@@ -125,27 +125,6 @@
     //   },
     // ],
     "prettier/prettier": "warn",
-    // "prettier/prettier": [
-    //   "error",
-    //   {
-    //     "trailingComma": "all",
-    //     // "tabWidth": 2,
-    //     // "semi": false,
-    //     // "singleQuote": true,
-    //     // "bracketSpacing": true,
-    //     "eslintIntegration": true,
-    //     // "printWidth": 120,
-    //     "overrides": [
-    //       {
-    //         "files": ["**/*.*c"],
-    //         "options": {
-    //           "parser": "json5",
-    //           "quoteProps": "preserve",
-    //         },
-    //       },
-    //     ],
-    //   },
-    // ],
 
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "react/jsx-no-undef": "error",
