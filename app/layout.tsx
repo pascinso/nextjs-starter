@@ -1,7 +1,6 @@
-import classNames from "styles/global.module.scss";
-import type { LayoutProps } from "./types";
+import classNames from "styles/app.module.scss";
 
-export default function useLayout({ children }: LayoutProps) {
+const useLayout: AppLayout = ({ children }) => {
   return (
     <html lang="en" className={classNames.html}>
       <body>
@@ -9,4 +8,6 @@ export default function useLayout({ children }: LayoutProps) {
       </body>
     </html>
   );
-}
+};
+
+export default useLayout;
