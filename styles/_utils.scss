@@ -4,13 +4,11 @@
   }
 }
 
-@mixin usePage($background: unset, $height: 100%) {
+@mixin usePage($background: unset, $height: 100vh) {
   align-items: center;
+  min-height: $height;
   justify-content: center;
   flex-direction: column;
-  @if $height != unset {
-    min-height: $height;
-  }
   @if $background != unset {
     &::before {
       content: "";
@@ -31,7 +29,6 @@
 @mixin useStyle {
   margin: 0;
   padding: 0;
-  height: 100%;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
