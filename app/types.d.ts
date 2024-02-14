@@ -1,15 +1,12 @@
-import type {
-  ReactNode,
-  NextPage,
-  FunctionComponent,
-  ComponentType,
-  SVGProps,
-} from "types";
-
-interface LayoutProps {
+interface AppLayoutProps {
   children: ReactNode;
 }
 
-interface Home extends NextPage, FunctionComponent {
-  readonly Vercel?: ComponentType<SVGProps<SVGSVGElement>>;
-}
+interface AppLayout extends NextPage, FunctionComponent<AppLayoutProps> {}
+
+interface Home
+  extends NextPage,
+    FunctionComponent,
+    Partial<
+      Readonly<{ Vercel: ComponentType<ComponentProps<SVGComponent>> }>
+    > {}
