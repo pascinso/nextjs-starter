@@ -1,0 +1,12 @@
+{
+  "eslint.validate": [
+    "json",
+    "jsonc",
+    "json5",
+    "javascript",
+    "javascriptreact"
+  ],
+  "json.schemas": [
+    { "fileMatch": [".*c"], "schema": { "allowTrailingCommas": true } }
+  ]
+}

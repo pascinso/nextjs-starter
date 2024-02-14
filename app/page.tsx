@@ -1,12 +1,11 @@
-import { defineProperties, dynamic } from "utils";
-import type { Home } from "./types";
 import classNames from "./styles.module.scss";
+import { defineProperties, dynamic } from "utils";
 
 const useHome: Home = () => {
   const { Vercel = () => null } = useHome;
   return (
     <main className={classNames.home}>
-      <Vercel width="30%" />
+      <Vercel />
     </main>
   );
 };
